@@ -1,0 +1,46 @@
+body{
+	background:rgb(173, 192, 128);
+	font-family: Arial, Helvetica, sans-serif;
+	color: white
+}
+
+
+h1, h2, li{
+	color:#555;
+}
+
+a{
+	color:blue;
+}
+
+p{
+	background: #666;
+	color: white;
+	padding: 10px;
+}
+.secondary {
+	color: #000;
+}
+
+#special {
+	background: red;
+	color: blue;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+  }
+  
+  .button1 {border-radius: 2px;}
+  .button2 {border-radius: 4px;}
+  .button3 {border-radius: 8px;}
+  .button4 {border-radius: 12px;}
+  .button5 {border-radius: 50%;}
