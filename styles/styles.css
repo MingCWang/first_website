@@ -1,11 +1,11 @@
 body{
-	background: rgb(121, 122, 114);
+	background: rgb(41, 138, 177);
 	color: white;
 	margin: 0;
 	padding: 0
 }
 header {
-	background: black;
+	background: rgb(41, 138, 177);
 	padding: 20px;
 	
 }
@@ -29,10 +29,19 @@ ul {
 
 }
 li {
+	background-color:orange;
 	display: inline-block;
-	margin-right: 20px;
-
+	margin-right: 50px;
+	border-radius: 3px;
 }
+a:link {
+	text-decoration: none;
+	background-color: transparent;
+}
+a:hover {
+	color: black;
+}
+
 footer{
 	background: black;
 	padding: 20px;
