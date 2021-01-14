@@ -40,7 +40,7 @@ header a:hover{
 }
 
 section{
-	background: rgb(48, 48, 63);
+	background: black;
 	padding: 20px;
 	text-align: center;
 	display: flex;
@@ -60,9 +60,26 @@ li {
 	display: inline-block;
 }
 footer{
-	background: blue;
+	background: black;
 	padding: 20px;
 	text-align: center;
 	margin: 0;
-	
+	font-size: 12px;
+}
+/* Features */
+.features{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+.features figure{
+	margin: auto;
+	width: 200px;
+	text-align: center;
+}
+.features figure img{
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: white 0px 0px 10px;
+	border: 1px solid Black;
 }
