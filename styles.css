@@ -1,55 +1,48 @@
-body{
-	background: rgb(41, 138, 177);
-	color: white;
+html{
+	background: url('images/Jewelry.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	margin: 0;
-	padding: 0
 }
-header {
-	background: black;
-	background-image: url("images/the-scene.jpeg");
-	background-size: 100%;
-	background-position: center;
-	padding: 20px;
-	height: 400px;
+body{
+	color: #FFFFFF;
+	margin: 0;
+}
+/* HEADER */
+header{
+	opacity: 1;
+	background-color: rgba(0,0,0,0.6);
+	padding: 10px;
+	height: 40px;
 	text-align: center;
-	
 }
 header a{
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-	padding: 20px;
+	font-family: 'Times New Roman', Times, serif;
 	text-decoration: none;
 	text-transform: uppercase;
-	
-}
-
-header .logo a{
-	background-image: url("images/WW.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 100px;
+	font-size: 15px;
 	position: relative;
-	left: -20px;
-	text-indent: -999999999px;
-	width: 100px;
+	top: -40px;
+}
+header .logo a{
+	font-family: 'Dancing Script', cursive;
+	display: inline-block;
+	position: relative;
+	top: -35px;
+	width: 250px;
 }
 header a:hover{
 	color: yellow;
 }
-
 section{
 	background: black;
 	padding: 20px;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
-}
-div{
-	background: red;
-	margin: auto;
-	width: 100px;
 }
 ul {
 	margin:0;
@@ -59,12 +52,27 @@ ul {
 li {
 	display: inline-block;
 }
+/* FOOTER */
 footer{
-	background: black;
+	position: absolute;
+	bottom: 0;
+	opacity: 1;
+	background-color: rgba(0,0,0,0); // This is in the form rgba(R,G,B,a) where a is your opacity
 	padding: 20px;
-	text-align: center;
 	margin: 0;
-	font-size: 12px;
+	width: 100%;
+	text-align: right;
+	height: 60px;
+}
+footer li{
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+	right: 10px;
+}
+.footer_1{
+	font-family:'Dancing Script', cursive;
 }
 /* Features */
 .features{
@@ -82,4 +90,14 @@ footer{
 	border-radius: 50%;
 	box-shadow: white 0px 0px 10px;
 	border: 1px solid Black;
+}
+/* FONT SIZE */
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 14px;
+}
+h3{
+	font-size: 12px;
 }
