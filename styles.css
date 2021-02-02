@@ -73,6 +73,12 @@ img {
 		font-size: 1.5rem;
 	}
 }
+
+.footer-1 {
+	font-weight: 100;
+	font-size: 1em;
+}
+
 /* Header 
 ================== */
 
@@ -104,7 +110,7 @@ nav li {
 	margin: 1em;
 }
 nav a{
-	font-weight: 200;
+	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: .8rem;
@@ -123,11 +129,11 @@ nav a:focus {
 	}
 	.logo {
 		float: left;
-		background-size: 300px;
-		width: 300px;
-		height: 50px;
+		background-size: 400px;
+		width: 350px;
+		height: 70px;
 		margin-left: 10px;
-		margin-top: 10px;
+		margin-top: 2px;
 	}
 	nav {
 		float: right;
@@ -144,9 +150,12 @@ nav a:focus {
 .home-hero {
 	background-size: cover;
 	background-position: center;
+	background-color: rgb(27, 25, 34);
 	background-image:
 	url(images/Jewelry.jpg);
 	padding: 10em 0;
+	background-blend-mode: lighten;
+
 
 }
 
@@ -188,18 +197,40 @@ nav a:focus {
 /* Footer
 ================== */
 
-footer{
-	margin-bottom: 0;
-	background: rgba(0,0,0,0.1); /* This is in the form rgba(R,G,B,a) where a is your opacity */
+footer {
+	margin-top: auto;
+	background: rgb(82, 21, 21); /* This is in the form rgba(R,G,B,a) where a is your opacity */
 	width: 100%;
+	height: 3rem;
+	padding: 0;
 	text-align: right;
 }
-footer li{
+footer li {
 	position: relative;
 	display: inline-block;
-	color: white;
-	padding: 5px;
-	right: 30px;
+	color: rgb(255, 255, 255);
+	bottom: 16px;
+}
+.logo-small {
+	background-image: url('images/Frontier-logo.png');
+	background-size: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent: -9999999999px;
+	height: 3rem;
+	width: 200px;
+	position: relative;
+	top:6px;
+}
+
+@media (min-width: 40rem) {
+	footer{
+		position: absolute;
+		bottom: 0;
+		right: 0.5rem;
+		background-color: rgba(0,0,0,0);
+	}
+	
 }
 /* Features
 ================== */
