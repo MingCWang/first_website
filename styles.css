@@ -42,7 +42,7 @@ img {
 	font-size: .9em;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 51rem) {
 	.title {
 		font-size: 3rem;
 	}
@@ -68,35 +68,30 @@ img {
 	color: #232323;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 51rem) {
 	.button {
 		font-size: 1.5rem;
 	}
 }
-
-.footer-1 {
-	font-weight: 100;
-	font-size: 1em;
-}
-
 /* Header 
 ================== */
 
 header { 
+	background-color: black;
 	position: absolute; 
 	width: 100%;
-	margin: 1em;
+	
 }
 
 .logo{
 	background-image: url('images/Frontier-logo.png');
-	background-size: 500px;
+	background-size: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-indent: -9999999900px;
 	display: flex; 
 	height: 50px;
-	margin-top: 10px;
+	margin-top: 20px;
 	width: 100%;
 }
 nav ul {
@@ -123,9 +118,11 @@ nav a:focus {
 	color: #DDD;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 51rem) {
 	header {
-		margin: 1em 1.5em 0 0;
+		height: 5em;
+		margin: 0 1.5em 0 0;
+		background-color: rgba(0,0,0,0.5);
 	}
 	.logo {
 		float: left;
@@ -133,10 +130,11 @@ nav a:focus {
 		width: 350px;
 		height: 70px;
 		margin-left: 10px;
-		margin-top: 2px;
+		margin-top: 10px;
 	}
 	nav {
 		float: right;
+		margin-top: 9px;
 	}
 	nav a {
 		padding: .5em;
@@ -159,7 +157,7 @@ nav a:focus {
 
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 51rem) {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
@@ -211,19 +209,26 @@ footer li {
 	color: rgb(255, 255, 255);
 	bottom: 16px;
 }
+footer li h3 {
+	font-weight: 100;
+	font-size: 1em;
+}
+footer li a {
+	padding: 0.5rem;
+}
 .logo-small {
 	background-image: url('images/Frontier-logo.png');
-	background-size: 250px;
+	background-size: 260px;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-indent: -9999999999px;
 	height: 3rem;
-	width: 200px;
+	width: 250px;
 	position: relative;
-	top:6px;
+	top:7px;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 51rem) {
 	footer{
 		position: absolute;
 		bottom: 0;
