@@ -3,6 +3,8 @@ url('https://fonts.googleapis.com/css2?family=Raleway:300, 400, 700, 900');
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -18,11 +20,10 @@ body{
 	flex-direction: column;
 }
 
-img {
+.img {
 	max-width: 100%;
 	height: auto;
 }
-
 .container {
 	width: 95%;
 	margin: 0 auto;
@@ -42,7 +43,7 @@ img {
 	font-size: .9em;
 }
 
-@media (min-width: 51rem) {
+@media (min-width: 54rem) {
 	.title {
 		font-size: 3rem;
 	}
@@ -68,7 +69,7 @@ img {
 	color: #232323;
 }
 
-@media (min-width: 51rem) {
+@media (min-width: 54rem) {
 	.button {
 		font-size: 1.5rem;
 	}
@@ -76,35 +77,41 @@ img {
 /* Header 
 ================== */
 
-header { 
-	background-color: black;
-	position: absolute; 
-	width: 100%;
-	
+nav {
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 8vh;
+	position: absolute;
+	width: 100%
 }
 
-.logo{
+
+.logo a{
 	background-image: url('images/Frontier-logo.png');
-	background-size: 400px;
+	background-size: 350px;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-indent: -9999999900px;
 	display: flex; 
-	height: 50px;
-	margin-top: 20px;
-	width: 100%;
-}
-nav ul {
-	margin: 0.25em 0 0 0;
-	padding: 0;
-	list-style: none;
+	width: 350px;
+	height: 70px;
+	margin-left: -10px;
+	margin-top: 10px;
 }
 
-nav li {
-	display: inline-block;
-	margin: 1em;
+.sidebar {
+	display: flex;
+	justify-content: flex-end;
+	width: 55%;
 }
-nav a{
+
+.sidebar li{
+ list-style: none;
+}
+
+.sidebar a{ 
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -113,35 +120,43 @@ nav a{
 	color: white;
 }
 
+.burger {
+	display: none;
+}
+.burger div {
+	background-color: white;
+	width: 1.5rem;
+	height: 0.1rem;
+	margin: 0.4rem;
+}
 nav a:hover,
 nav a:focus {
 	color: #DDD;
 }
 
-@media (min-width: 51rem) {
-	header {
-		height: 5em;
-		margin: 0 1.5em 0 0;
-		background-color: rgba(0,0,0,0.5);
+/* screen */
+
+@media (max-width: 54rem) {
+	.sidebar {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		left: 0;
+		position: absolute;
+		top: 8vh;
+		height: 92vh;
+	 
+
+		
 	}
-	.logo {
-		float: left;
+	.logo a {
+		background-image: url('images/Frontier-logo.png');
 		background-size: 400px;
-		width: 350px;
-		height: 70px;
-		margin-left: 10px;
-		margin-top: 10px;
+		height: 50px;
+		width: 100%;
 	}
-	nav {
-		float: right;
-		margin-top: 9px;
-	}
-	nav a {
-		padding: .5em;
-	}
-
 }
-
 /* Home-hero 
 ================== */
 
@@ -153,11 +168,9 @@ nav a:focus {
 	url(images/Jewelry.jpg);
 	padding: 10em 0;
 	background-blend-mode: lighten;
-
-
 }
 
-@media (min-width: 51rem) {
+@media (min-width: 54rem) {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
@@ -202,6 +215,7 @@ footer {
 	height: 3rem;
 	padding: 0;
 	text-align: right;
+	
 }
 footer li {
 	position: relative;
