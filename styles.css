@@ -112,7 +112,7 @@ nav {
 }
 
 .logo a{
-	background-image: url('images/Frontier-logo.png');
+	background-image: url('images/Frontier-logo\.png');
 	background-size: 350px;
 	background-position: center;
 	background-repeat: no-repeat;
