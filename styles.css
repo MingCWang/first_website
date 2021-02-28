@@ -249,23 +249,29 @@ footer li a {
 		flex-direction: row-reverse;
 		align-items: flex-start;
 	}
-
-
-	
 	
 	/* sidebar 
 	=================== */
 
 	.sidebar {
-		background-color: black;
+		background-color:  rgb(223, 140, 140);
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		flex-direction: column-reverse;
 		left: 0;
 		position: absolute;
 		height: 100vh;
-		width: 50%;
+		width: 30%;
 		transform: translateX(-100%);
+		z-index: 2;
+	}
+
+	.sidebar li {
+		text-align: left;
+		margin-top: 20px;
+	}
+
+	.sidebar li:last-child {
+		margin-top: 70px;
 	}
 
 	.sidebar-active {
@@ -289,13 +295,34 @@ footer li a {
 	}
 
 	.burger {
+		z-index: 2;
 		display: block;
+	}
+
+	.shade {
+		position: absolute;
+		background-color: black;
+		opacity: 0;
+		margin-left: auto;
+		margin-right: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: -1;
+		transition: ease-in-out 0.5s;
+		
+	}
+
+	.shade-show {
+		transition: ease-in-out 0.5s;
+		opacity: 0.5;
+		z-index: 1;
 	}
 
 	/* Logo
 	================== */
 
 	.logo {
+		
 		margin: 0 auto;
 	}
 
@@ -313,6 +340,7 @@ footer li a {
 	================== */
 
 	footer {
+		z-index: 0;
 		text-align: center;
 		background: rgb(82, 21, 21); 
 	}
@@ -365,7 +393,7 @@ footer li a {
 	================== */
 
 	.sidebar{
-		width: 60%;
+		width: 80%;
 	}
 
 	/* Footer 
