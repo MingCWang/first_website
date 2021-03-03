@@ -96,6 +96,16 @@ body{
 	color: #232323;
 }
 
+.text h3 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.contactcontainer h1 {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
 
 
 /* Header 
@@ -176,6 +186,31 @@ nav a:focus {
 	height: 100vh;
 	padding-top: 35vh;
 	background-blend-mode: lighten;
+}
+
+/* Contact-hero
+================== */
+
+.contact-hero {
+	background-color: rgb(146, 146, 219);
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contactcontainer {
+	
+	height: 30vh;
+}
+.contactcontainer .title {
+	margin-top: 130px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
 
 
@@ -379,6 +414,7 @@ footer li a {
 	.home-hero {
 		height: 50vh;
 		padding-top: 15vh;
+		background-position: center;
 	}
 
 	/* Home-about
