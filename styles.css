@@ -30,6 +30,13 @@ body{
 	margin: 0 auto;
 }
 
+.centerabsolute {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
 
 /* cover
 ================== */
@@ -119,6 +126,7 @@ nav {
 	position: absolute;
 	width: 100%;
 	align-items: center;
+	
 }
 
 .logo {
@@ -218,6 +226,17 @@ nav a:focus {
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
+	
+}
+
+.contactbackground {
+	background-image: url(images/street.jpeg);
+	background-position: center;
+	position: absolute;
+	background-repeat: no-repeat;
+	height: 30vh;
+	width: 100%;
+
 }
 
 .contactcontainer {
@@ -228,9 +247,9 @@ nav a:focus {
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
+	display: inline-block;
 	text-align: left;
+	width: 65%;
 }
 
 
@@ -311,7 +330,7 @@ footer li h3{
 
 
 	nav {
-		background-color: rgba(0,0,0,0);
+		
 		flex-direction: row-reverse;
 		align-items: flex-start;
 	}
@@ -402,7 +421,6 @@ footer li h3{
 	================== */
 
 	.logo {
-		
 		margin: 0 auto;
 	}
 
@@ -457,7 +475,7 @@ footer li h3{
 
 	/* Header (sidebar)
 	=================== */
-
+	
 	.logo a {
 		background-size: 250px;
 	}
