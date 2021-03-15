@@ -15,6 +15,7 @@ const SideBar = () => {
             setTimeout(deletetransition, 300);
         } else {
             sidebar.style.transition = 'transform 0.3s ease-out';
+            shade.style.transition = '0.3s ease-out';
         }
     };
 
