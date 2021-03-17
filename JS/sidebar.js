@@ -43,13 +43,16 @@ const SideBar = () => {
 
 
 const background = () => {
-    const p = document.querySelector('.parallax-bg');
+    const p = document.querySelectorAll('.parallax-bg');
+    
+    window.addEventListener('scroll', () => {
+        let scroll = window.scrollY;
+        
+        p.forEach(element => {
+            element.style.top = scroll * 0.5 + 'px';
+        });
 
-    window.onscroll = function(){
-        let scrollY = window.scrollY;
-        p.style.backgroundPosition = 'center ' + (scrollY*0.5) + 'px';
-      };
-
+    });
 };
 
 
