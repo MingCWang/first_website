@@ -1,13 +1,9 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Raleway:300, 400, 700, 900');
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/* border: 1px solid red; */
 }
-
-
 
 body{
 	font-family: 'Raleway', sans-serif;
@@ -20,17 +16,15 @@ body{
 
 :root {
 	height: 100%;
-
+	
 	/* Z INDEX */
 
-	
 	--logo: 1;
 	--shadehide: -2;
 	--shadeshow: 1;
 	--aboveshadow: 2;
 	--aboveicons: 1;
 	--abovebackground: 1;
-
 }
 
 /* INCLUDES IN ALL PAGES  */
@@ -80,13 +74,15 @@ body{
 		color: #232323;
 	}
 
-	.text h3 {
+	.text h3{
+		font-family: 'Raleway', sans-serif;
 		text-transform: uppercase;
-		font-weight: 400;
+		font-weight: 300;
+		font-size: 25px;
+		
 	}
 
 	.contacttitle {
-		margin-top: 130px;
 		font-size: 2em;
 		font-weight: 300;
 		color: white;
@@ -94,7 +90,6 @@ body{
 		letter-spacing: 10px;
 		text-transform: uppercase;
 	}
-
 
 	/* Header 
 	================== */
@@ -108,7 +103,6 @@ body{
 		width: 100%;
 		align-items: center;
 		z-index: var(--abovebackground);
-		
 	}
 
 	.logo {
@@ -134,7 +128,6 @@ body{
 		flex-direction: row;
 		justify-content: center;
 		width: 100%;
-		
 	}
 
 	.sidebar li {
@@ -178,7 +171,6 @@ body{
 		display: flex;
 		justify-content: flex-end;
 		font-size: 15px;
-		
 	}
 
 	.icons li {
@@ -190,20 +182,20 @@ body{
 	================== */
 
 	footer {
-		
+		overflow-y: hidden;
 		display: flex;
 		margin-top: auto;
 		width: 100%;
 		height: 3rem;
 		padding: 0;
 		bottom: 0;
-		background-color: rgba(0,0,0,0);
+		background-color: black; 
 		list-style: none;
 		justify-content: flex-end;
 	}
 
 	footer li {
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 
 	.socialmedialinks {
@@ -219,8 +211,7 @@ body{
 		font-weight: 100;
 		font-size: 1em;
 		margin-right: 5px;
-		border-right: solid;
-		border-width: thin;
+		border-right: solid thin;
 		padding-right: 10px;
 	}
 
@@ -270,18 +261,21 @@ body{
 
 	.contactbackground {
 		background-image: url(images/street.jpeg);
+		background-color: #00ff6c;
 		background-position: center;
 		position: absolute;
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 40vh;
 		width: 100%;
+		background-blend-mode: darken;
 	}
 
 	.contactcontainer {
 		position: absolute;
 		width: 100%;
-		height: 30vh;
+		height: 40vh;
+		top: 180px;
 	}
 
 	.content {
@@ -297,15 +291,23 @@ body{
 	}
 
 	.contactInfo {
+		cursor: pointer;
 		text-align: left;
 		width: 65%;
-		border-bottom: black solid thin;
 		margin-bottom: 30px;
 	}
+	
+	.text {
+		display: flex;
+		justify-content: space-between;
+	}
 
-
-
-
+	.box :hover {
+		border-bottom: black solid thin;
+	}
+	.text :hover {
+		border: 0;
+	}
 
 /* iPad/iPad pro */
 @media only screen and (min-width: 200px) and (max-width: 855px)  {
@@ -328,7 +330,6 @@ body{
 	body {
 		overflow-x: hidden;
 	}
-
 
 	nav {
 		
@@ -432,14 +433,11 @@ body{
 		
 	}
 
-		
 	/* Footer 
 	================== */
 
 	footer {
-		
 		justify-content: center;
-		background: rgb(82, 21, 21); 
 	}
 
 	footer li{
@@ -451,8 +449,6 @@ body{
 	}
 
 }
-
-
 
 /* mobile/cellphone widths */
 @media only screen and (min-width: 200px) and (max-width: 500px)  {
@@ -471,7 +467,7 @@ body{
 		font-size: .9em;
 	}
 
-	/* Header (sidebar)
+	/* Header 
 	=================== */
 	
 	.logo a {
@@ -543,6 +539,12 @@ body{
 		font-weight: 100;
 		font-size: 1em;
 		border: none;
+	}
+
+	/* CONTACT PAGE */
+
+	.contactcontainer {
+		top: 150px;
 	}
 }
 
