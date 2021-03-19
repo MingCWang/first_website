@@ -78,7 +78,8 @@ body{
 		font-family: 'Raleway', sans-serif;
 		text-transform: uppercase;
 		font-weight: 300;
-		font-size: 25px;
+		font-size: 20px;
+		letter-spacing: 6px;
 		
 	}
 
@@ -266,7 +267,7 @@ body{
 		position: absolute;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 40vh;
+		height: 50vh;
 		width: 100%;
 		background-blend-mode: darken;
 	}
@@ -286,8 +287,8 @@ body{
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		top: 40vh;
-		height: 65vh;
+		top: 50vh;
+		height: 55vh;
 	}
 
 	.contactInfo {
@@ -296,12 +297,15 @@ body{
 		width: 65%;
 		margin-bottom: 30px;
 	}
-	
 	.text {
 		display: flex;
 		justify-content: space-between;
 	}
 
+	.contactdropdown {
+		background-color: #00ff6c;
+		height: 30vh;
+	}
 	.box :hover {
 		border-bottom: black solid thin;
 	}
