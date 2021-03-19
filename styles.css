@@ -74,15 +74,25 @@ body{
 		color: #232323;
 	}
 
-	.text h3{
-		font-family: 'Raleway', sans-serif;
-		text-transform: uppercase;
-		font-weight: 300;
-		font-size: 20px;
-		letter-spacing: 6px;
-		
+	.droptitle {
+		font-weight: 400;
+		font-size: 12px;
+		letter-spacing: 1px;
 	}
 
+	p {
+		font-weight: 100;
+		font-size: 12px;
+		transform: scaleY(0.8);
+	}
+
+	.text h3{
+		text-transform: uppercase;
+		font-weight: 100;
+		font-size: 22px;
+		letter-spacing: 1px;;
+		
+	}
 	.contacttitle {
 		font-size: 2em;
 		font-weight: 300;
@@ -303,15 +313,18 @@ body{
 	}
 
 	.contactdropdown {
-		background-color: #00ff6c;
-		height: 30vh;
+		/* background-color: #00ff6c; */
+		background-color: rgb(51, 116, 160);;
+		height: 10vh;
+		margin-top: 15px;
 	}
-	.box :hover {
-		border-bottom: black solid thin;
+
+	.box :hover, 
+	.box :active {
+		margin-bottom: -1px;
+		border-bottom: thin solid black;
 	}
-	.text :hover {
-		border: 0;
-	}
+	
 
 /* iPad/iPad pro */
 @media only screen and (min-width: 200px) and (max-width: 855px)  {
