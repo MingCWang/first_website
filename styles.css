@@ -29,14 +29,9 @@ body{
 
 /* INCLUDES IN ALL PAGES  */
 
-	.img {
-		max-width: 100%;
-		height: auto;
-	}
-
-	.container {
-		width: 95%;
-		margin: 0 auto;
+	.flexcenter {
+		display: flex;
+		justify-content: center;
 	}
 
 	/* typography
@@ -64,14 +59,14 @@ body{
 	}
 
 	.button-accent {
-		color: #00ff6c;
-		border-color: #00ff6c;
+		color: white;
+		border-color :white;
 	}
 
 	.button-accent:hover,
 	.button-accent:focus {
-		background: #00ff6c;
-		color: #232323;
+		background: white;
+		color: rgb(35, 35, 48);
 	}
 
 	.droptitle {
@@ -102,6 +97,14 @@ body{
 		text-transform: uppercase;
 	}
 
+	.buttonfont {
+		font-weight: 100;
+		color: rgb(218, 210, 210);
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: black;
+		word-spacing: 3px;
+	}
 	/* Header 
 	================== */
 
@@ -135,9 +138,7 @@ body{
 
 	.sidebar {
 		margin-bottom: 15px;;
-		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		width: 100%;
 	}
 
@@ -254,6 +255,11 @@ body{
 		background-blend-mode: lighten;
 	}
 
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
 	.notsticky {
 		position: absolute;
 	}
@@ -292,9 +298,7 @@ body{
 	.content {
 		background: rgb(51, 116, 160);
 		position: absolute;
-		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		width: 100%;
 		top: 50vh;
@@ -311,22 +315,28 @@ body{
 		display: flex;
 		justify-content: space-between;
 	}
-
 	.box {
-		/* border-bottom: 1px solid black; */
 		height: 40px;
 		width: 100%;
 	}
 	.contactdropdown {
 		/* background-color: #00ff6c; */
-		background-color: rgb(51, 116, 160);;
-		height: 10vh;
+		background-color: rgb(51, 116, 160);
+		height: 15vh;
 		margin-top: 15px;
+		border-bottom: thin solid black;
+	}
+	.contactbutton {
+		margin-top: 15px;
+		padding: 8px;
 	}
 
-	.box:hover, 
-	.box:active {
+	.box:hover {
 		border-bottom: thin solid black;
+	}
+
+	.contactbutton:hover {
+		opacity: 0.95;
 	}
 	
 
@@ -374,7 +384,7 @@ body{
 
 	.sidebar {
 		justify-content: start;
-		background-color:  rgb(223, 140, 140);
+		background-color:  black;
 		display: flex;
 		flex-direction: column;
 		left: 0;
