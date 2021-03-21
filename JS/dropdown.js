@@ -1,15 +1,18 @@
 function dropdown() {
     const box = Array.apply(null, document.querySelectorAll('.box'));
-            
+    const contactdropdown = document.querySelector('.contactdropdown');
    
 
     box.forEach(item => {
         item.addEventListener('click' , () => {
-            item.style.borderBottom = 'thin solid black';
+            item.classList.toggle('box-active');
+            contactdropdown.classList.toggle('contactdropdown-active');
         });
     });
       
 
+   
+      
 
 };
 
