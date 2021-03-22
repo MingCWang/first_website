@@ -40,14 +40,13 @@ const SideBar = () => {
    
 }
 
-
+// PARALLAX EFFECT
 
 const background = () => {
     const p = document.querySelectorAll('.parallax-bg');
     
     window.addEventListener('scroll', () => {
         let scroll = window.scrollY;
-        
         p.forEach(element => {
             element.style.top = scroll * 0.5 + 'px';
         });

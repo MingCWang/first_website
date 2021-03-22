@@ -297,17 +297,16 @@ body{
 		position: absolute;
 		width: 100%;
 		height: 40vh;
-		top: 225px;
+		top: 30vh;
 	}
 
-	
 	.content {
-		background: rgb(51, 116, 160);
-		position: absolute;
+		background-color: rgb(51, 116, 160);
+		position: relative;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		top: 60vh;
+		margin-top: 60vh;
 		height: 45vh;
 	}
 
@@ -340,6 +339,7 @@ body{
 	}
 
 	.box-active{
+		padding: none;
 		border-bottom: thin solid black;
 	}
 
@@ -352,14 +352,17 @@ body{
 	.contactdropdown {
 		/* background-color: #00ff6c; */
 		background-color: rgb(51, 116, 160);
-		height: 120px;
+		height: 0px;
 		margin-top: 15px;
-		border-bottom: thin solid black;
-		display: none;
+		display: block;
+		transition: height 0.5s;
+		overflow: hidden;
 	}
 
 	.contactdropdown-active {
 		display: block;
+		height: 120px;
+		border-bottom: thin solid black;
 	}
 
 
