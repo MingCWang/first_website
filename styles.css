@@ -39,6 +39,7 @@ body{
 		justify-content: center;
 	}
 
+	
 	/* typography
 		================== */
 
@@ -209,6 +210,7 @@ body{
 		background-color: black; 
 		list-style: none;
 		justify-content: flex-end;
+		position: relative;
 	}
 
 	footer li {
@@ -278,7 +280,9 @@ body{
 		text-align: center;
 		background-color: black;
 		width: 100%;
-		height: 105vh;
+		position: relative;
+		overflow: hidden;
+		height: auto;
 	}
 
 	.contactbackground {
@@ -294,31 +298,32 @@ body{
 	}
 
 	.contactcontainer {
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 40vh;
-		top: 30vh;
+		height: 60vh;
+	}
+
+	.contacttitle {
+		padding-top: 30vh;
 	}
 
 	.content {
 		background-color: rgb(51, 116, 160);
 		position: relative;
 		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		margin-top: 60vh;
-		height: 45vh;
 	}
 
 	.centercontent {
-		transform: translate(50%, 10vh) translateX(-32.5%);
+		padding: 10vh 0;
+		transform: translate(50%) translateX(-32.5%);
 	}
 
 	.contactInfo {
+		position: relative;
 		cursor: pointer;
 		text-align: left;
-		width: 65%;
-		margin-bottom: 20px;
+		width: 580px;
+		margin-bottom: 5px;
 	}
 	.text {
 		display: flex;
@@ -327,6 +332,10 @@ body{
 	.box {
 		height: 40px;
 		width: 100%;
+	}
+	.box-active{
+		padding: none;
+		border-bottom: thin solid black;
 	}
 	
 	.contactbutton {
@@ -337,12 +346,7 @@ body{
 	.box:hover {
 		border-bottom: thin solid black;
 	}
-
-	.box-active{
-		padding: none;
-		border-bottom: thin solid black;
-	}
-
+	
 	.contactbutton:hover {
 		opacity: 0.95;
 	}
@@ -350,13 +354,13 @@ body{
 	/* CONTACT DROPDOWN EFFECT */
 
 	.contactdropdown {
-		/* background-color: #00ff6c; */
 		background-color: rgb(51, 116, 160);
 		height: 0px;
 		margin-top: 15px;
 		display: block;
 		transition: height 0.5s;
 		overflow: hidden;
+		
 	}
 
 	.contactdropdown-active {
@@ -364,8 +368,6 @@ body{
 		height: 120px;
 		border-bottom: thin solid black;
 	}
-
-
 
 /* iPad/iPad pro */
 @media only screen and (min-width: 200px) and (max-width: 855px)  {
@@ -576,7 +578,6 @@ body{
 		flex-direction: column;
 		justify-content: space-evenly;
 		height: 12rem;
-		position: relative;
 	}
 	
 	.notsticky {
