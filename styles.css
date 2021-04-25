@@ -322,12 +322,28 @@ body{
 		position: relative;
 		cursor: pointer;
 		text-align: left;
-		width: 580px;
+		width: 60%;
 		margin-bottom: 5px;
 	}
 	.text {
 		display: flex;
 		justify-content: space-between;
+	}
+	.open-active {
+		display: none;
+	}
+	.close {
+		position: relative;
+		background-color: black;
+		height: 2px;
+		width: 12px;
+		margin-top: 15.5px;
+		margin-right: 2px;
+		display: none;
+		
+	}
+	.close-active {
+		display: flex;
 	}
 	.box {
 		height: 40px;
