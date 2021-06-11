@@ -368,8 +368,8 @@ body{
 	}
 	
 	/* CONTACT DROPDOWN EFFECT */
-
-	.contactdropdown {
+	
+	.contactdropdowncall {
 		background-color: rgb(51, 116, 160);
 		height: 0px;
 		margin-top: 15px;
@@ -379,11 +379,33 @@ body{
 		
 	}
 
-	.contactdropdown-active {
+	.contactdropdowncall-active {
 		display: block;
 		height: 120px;
 		border-bottom: thin solid black;
 	}
+
+	.contactdropdownmessage {
+		background-color: rgb(51, 116, 160);
+		height: 0px;
+		margin-top: 15px;
+		display: block;
+		transition: height 0.5s;
+		overflow: hidden;
+	}
+
+	.contactdropdownmessage-active {
+		display: block;
+		height: 60px;
+		border-bottom: thin solid black;
+	}
+
+	.line-it-button {
+		position: absolute;
+		margin-top: 10px;
+	}
+
+
 
 /* iPad/iPad pro */
 @media only screen and (min-width: 200px) and (max-width: 855px)  {
@@ -619,7 +641,7 @@ body{
 	/* CONTACT PAGE */
 
 	.contactcontainer {
-		top: 150px;
+		top: 15px;
 	}
 }
 
