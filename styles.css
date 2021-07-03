@@ -29,7 +29,7 @@ body{
 
 	/* CONTACT */
 	
-
+	--dropdowncolor: white;
 }
 
 /* INCLUDES IN ALL PAGES  */
@@ -308,7 +308,8 @@ body{
 	}
 
 	.content {
-		background-color: rgb(51, 116, 160);
+		background-color: white;
+		/* background-color: rgb(51, 116, 160); */
 		position: relative;
 		flex-direction: column;
 	}
@@ -328,22 +329,6 @@ body{
 	.text {
 		display: flex;
 		justify-content: space-between;
-	}
-	.open-active {
-		display: none;
-	}
-	.close {
-		position: relative;
-		background-color: black;
-		height: 2px;
-		width: 12px;
-		margin-top: 15.5px;
-		margin-right: 2px;
-		display: none;
-		
-	}
-	.close-active {
-		display: flex;
 	}
 	.box {
 		height: 40px;
@@ -368,15 +353,77 @@ body{
 	}
 	
 	/* CONTACT DROPDOWN EFFECT */
-	
-	.contactdropdowncall {
-		background-color: rgb(51, 116, 160);
+
+	.open1-active {
+		display: none;
+	}
+	.close1 {
+		position: relative;
+		background-color: black;
+		height: 2px;
+		width: 12px;
+		margin-top: 15.5px;
+		margin-right: 2px;
+		display: none;
+		
+	}
+	.close1-active {
+		display: flex;
+	}
+	.open2-active {
+		display: none;
+	}
+	.close2 {
+		position: relative;
+		background-color: black;
+		height: 2px;
+		width: 12px;
+		margin-top: 15.5px;
+		margin-right: 2px;
+		display: none;
+		
+	}
+	.close2-active {
+		display: flex;
+	}
+	.open3-active {
+		display: none;
+	}
+	.close3 {
+		position: relative;
+		background-color: black;
+		height: 2px;
+		width: 12px;
+		margin-top: 15.5px;
+		margin-right: 2px;
+		display: none;
+	}
+	.close3-active {
+		display: flex;
+	}
+
+	.contactdropdownmail {
+		background-color: var(--dropdowncolor);
 		height: 0px;
 		margin-top: 15px;
 		display: block;
 		transition: height 0.5s;
 		overflow: hidden;
-		
+	}
+
+	.contactdropdownmail-active {
+		display: block;
+		height: 100px;
+		border-bottom: thin solid black;
+	}
+	
+	.contactdropdowncall {
+		background-color: var(--dropdowncolor);
+		height: 0px;
+		margin-top: 15px;
+		display: block;
+		transition: height 0.5s;
+		overflow: hidden;
 	}
 
 	.contactdropdowncall-active {
@@ -386,7 +433,7 @@ body{
 	}
 
 	.contactdropdownmessage {
-		background-color: rgb(51, 116, 160);
+		background-color: var(--dropdowncolor);
 		height: 0px;
 		margin-top: 15px;
 		display: block;
@@ -403,6 +450,24 @@ body{
 	.line-it-button {
 		position: absolute;
 		margin-top: 10px;
+	}
+
+	/* ABOUT PAGE */
+
+	.top{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 600vh;
+		background-color: white;
+	}
+
+	.bottom{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 60vh;
+		background-color: black;
 	}
 
 
