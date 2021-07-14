@@ -38,6 +38,11 @@ body{
 		display: flex;
 		justify-content: center;
 	}
+	
+	.divbox{
+		display: block;
+		position: relative;
+	}
 
 	
 	/* typography
@@ -94,7 +99,7 @@ body{
 		letter-spacing: 1px;;
 		
 	}
-	.contacttitle {
+	.pagetitle {
 		font-size: 2em;
 		font-weight: 300;
 		color: white;
@@ -316,7 +321,7 @@ body{
 
 	.centercontent {
 		padding: 10vh 0;
-		transform: translate(50%) translateX(-32.5%);
+		transform: translate(50%) translateX(-31%);
 	}
 
 	.contactInfo {
@@ -454,22 +459,53 @@ body{
 
 	/* ABOUT PAGE */
 
-	.top{
-		display: block;
-		position: relative;
+	.founder{
 		width: 100%;
-		height: 600vh;
+		height: 95vh;
 		background-color: white;
+		
+	}
+	.foundertext {
+		margin-top: 150px;
+		color: black;
+	}
+	.founderpic{
+		margin: 50px auto;
+		width: 350px;
+		height: auto;
+	}
+	.autobiography{
+		display: inline-block;
+		text-align: center;
+		height: 25vh;
+		width: 85%;
+	}
+	.lisa{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		color:BLACK;
+		font-size: 15px;
+	}
+	.pagetitle{
+		color: black;
 	}
 
-	.bottom{
-		display: block;
-		position: relative;
+	.Awardbox{
 		width: 100%;
-		height: 60vh;
+	}
+	.horizontalpic{
+		list-style: none;
+		display: flex;
+		flex-direction: row;	
+		justify-content: center;	
+	}
+	.awardpic{
+		margin: 100px 30px;
+		width: 200px;
+		height: 200px;
 		background-color: black;
 	}
-
 
 
 /* iPad/iPad pro */

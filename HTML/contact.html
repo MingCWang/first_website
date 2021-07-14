@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home Page</title>
+		<title>Contact Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="../styles.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/2f7665425c.js" crossorigin="anonymous"></script>
@@ -20,8 +20,8 @@
 			<ul class = 'sidebar flexcenter'>	
 				<li><a href="">Shop now</a></li>
 				<li><a href="">Customize</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">contacts</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a>contacts</a></li>
 			</ul>
 			<ul class = 'icons'>
 				<li><a href=""><i class="fas fa-search" style = color:white></i></a></li>
@@ -45,7 +45,7 @@
 		<section class = 'contact-hero'>
 			<div class="contactbackground parallax-bg"></div>
 				<div class="contactcontainer">
-					<h1 class = 'contacttitle flexcenter'>Contact us</h1>	
+					<h1 class = 'pagetitle flexcenter'>Contact us</h1>	
 				</div>
 			<div class="content">
 				<div class="centercontent">
@@ -54,17 +54,24 @@
 						<div class="sendmail-box box">
 							<div class="text">
 								<h3>Send Email</h3>
-								<h3>+</h3>
+								<h3 class = 'open1'>+</h3>
+								<div class = 'close1'></div>
 							</div>
 						</div>
+						<div class="contactdropdownmail">
+							<h3 class = 'droptitle'>Clicking the link will direct you to your mail application</h3>
+							<p></p>
+							<a href="mailto:onlytests34@gmail.com" class="contactbutton flexcenter buttonfont">Email Us</a>
+						</div>
+
 					</div>
 					<div class="contactInfo">
 						<div class="Icon"><i class="fas fa-phone"></i></div>
 						<div class="call-box box">
 							<div class="text">
 								<h3>Call Us</h3>
-								<h3 class = 'open'>+</h3>
-								<div class = 'close'></div>
+								<h3 class = 'open2'>+</h3>
+								<div class = 'close2'></div>
 							</div>
 						</div>
 						<div class="contactdropdowncall">
@@ -78,7 +85,8 @@
 						<div class="message-box box">
 							<div class="text">
 								<h3>Message Us</h3>
-								<h3>+</h3>
+								<h3 class = 'open3'>+</h3>
+								<div class = 'close3'></div>
 							</div>
 						</div>
 						<div class="contactdropdownmessage">
