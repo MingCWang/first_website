@@ -146,6 +146,8 @@ body{
 		height: 70px;
 		margin-top: 10px;
 	}
+	/* SIDEBAR
+	================== */
 
 	.sidebar {
 		margin-bottom: 15px;;
@@ -161,6 +163,8 @@ body{
 		font-weight: 400;
 		text-decoration: none;
 		text-transform: uppercase;
+		word-spacing: 5px;
+		letter-spacing: 2px;
 		font-size: .8rem;
 		padding: 2em;
 		color: white;
@@ -547,7 +551,7 @@ body{
 		left: 60px;
 	}
 
-	/* sidebar 
+	/* SIDEBAR
 	=================== */
 
 	.sidebar {
@@ -567,9 +571,11 @@ body{
 		text-align: left;
 		margin-top: 20px;
 	}
-
 	.sidebar li:first-child {
 		margin-top: 70px;
+	}
+	.sidebar li:last-child {
+		margin-top: 140px;
 	}
 
 	.sidebar-active {
@@ -707,7 +713,7 @@ body{
 	================== */
 
 	.sidebar{
-		width: 80%;
+		width: 70%;
 	}
 
 	/* Footer 
