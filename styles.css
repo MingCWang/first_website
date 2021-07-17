@@ -279,6 +279,35 @@ body{
 	.notsticky {
 		position: absolute;
 	}
+/* HIGH JEWELRY */
+	.highjewpic{
+		background-color: black;
+		background-image: no-repeat;
+		margin-top: 161.19px;
+		background-size: contain;
+		width: 100%;
+		height: 320px;
+	}
+	.product{
+		width: 100%;
+		height: 1000px;
+	}
+	.productpic{
+		margin: 50px 15px 10px;
+		width: 350px;
+		height: 400px;
+		background-color: white;
+	}
+	.productpic:hover{
+		border-bottom: black solid 5px;
+		cursor: pointer;
+	}
+	
+	.productpic a {
+		display: inline-block;
+		width: inherit;
+		height: inherit;
+	}
 
 /* CONTACT PAGE */
 
@@ -461,7 +490,7 @@ body{
 		margin-top: 10px;
 	}
 
-	/* ABOUT PAGE */
+/* ABOUT PAGE */
 
 	.founder{
 		width: 100%;
@@ -491,10 +520,6 @@ body{
 		color:BLACK;
 		font-size: 15px;
 	}
-	.pagetitle{
-		color: black;
-	}
-
 	.Awardbox{
 		width: 100%;
 	}
@@ -509,6 +534,9 @@ body{
 		width: 200px;
 		height: 200px;
 		background-color: black;
+	}
+	.awardstitle {
+		color:black;
 	}
 
 
