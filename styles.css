@@ -590,7 +590,7 @@ body{
 		left: 0;
 		position: absolute;
 		height: 100vh;
-		width: 30%;
+		width: 237px;
 		transform: translateX(-100%);
 		z-index: var(--aboveshadow);
 	}
